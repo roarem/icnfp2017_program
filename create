@@ -1,0 +1,13 @@
+#!/bin/bash
+
+cd python
+python program.py
+
+cd ../program/build
+
+pdflatex ../main/main.tex
+pdflatex ../main/main.tex
+
+cp main.pdf ../
+rm *
+
