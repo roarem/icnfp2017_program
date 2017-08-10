@@ -1,5 +1,5 @@
-
-import csv 
+#from os import walk
+import csv,os
 
 PLEN_OUT_PATH      = '../program/plenary/'
 PARA_OUT_PATH      = '../program/parallel/'
@@ -44,72 +44,92 @@ class Program:
   def plenary (self):
 
     old_date        = '1'
-    tablestart      ='\\begin{table}[h!]\n\\begin{tabular}{p{3cm}p{13cm}}\n'
-    tablestop       ='\\end{tabular}\n\\end{table}\n\n'#+30*'%'+'\n\\hspace*{-10cm}\n' 
- 
-    f=open(PLEN_IN_FILE,'r')
-    g=open(PLEN_CONV_IN_FILE,'r')
-    A=open(PLEN_OUT_PATH+"plenary1.tex",'w')
-    
-    datareader = csv.reader(f,delimiter=',',quotechar='"')
-    chairmen   = csv.reader(g,delimiter=',',quotechar='"')
-    headers = next(datareader)
+    #tablestart      ='\\begin{longtable}[h!]\n\\begin{tabular}{p{3cm}p{13cm}}\n'
+    tablestart      ='\\begin{longtable}{p{3cm}p{13cm}}\n'#[h!]\n\\begin{tabular}\n'
+    #tablestop       ='\\end{tabular}\n\\end{longtable}\n\n'#+30*'%'+'\n\\hspace*{-10cm}\n' 
+    tablestop       ='\\end{longtable}\n\n'#+30*'%'+'\n\\hspace*{-10cm}\n' 
 
-    A.write(tablestart)
-    A.write('&\\hfill {\\bf Convenor '+next(chairmen)[2] + ' }\\\ \n')
+    session_files = []
+    for (dirpath, dirnames, filenames) in os.walk('../inputfiles/sessions/'):
+        session_files.extend(filenames)
+        break
+    session_files.sort()
 
-    for row in datareader:
-      date        = row[0]
-      clock       = row[1]
-      last_name   = row[2]
-      first_name  = row[3]
-      stay        = row[4]
-      institute   = row[5]
-      length      = row[6]
-      title       = row[7]
-      
-      if date!=old_date:
-        A.write(tablestop)
-        A.close()
-        A = open(PLEN_OUT_PATH+"plenary"+date+".tex",'w')
+    sessions = {}
+    with open('../inputfiles/sessions/'+session_files[0],'r') as order:
+        for line in order:
+            line = line.strip().split('#')
+            sessions[line[1]] = line[0]
+
+    for fi in session_files[1:]:
+        #f=open(PLEN_IN_FILE,'r')
+        f=open('../inputfiles/sessions/'+fi,'r')
+        #g=open(PLEN_CONV_IN_FILE,'r')
+        #A=open(PLEN_OUT_PATH+"plenary1.tex",'w')
+        A=open(PLEN_OUT_PATH+fi+".tex",'w+')
+        
+        datareader = csv.reader(f,delimiter=',',quotechar='"')
+        #chairmen   = csv.reader(g,delimiter=',',quotechar='"')
+        #headers = next(datareader)
+
         A.write(tablestart)
-        try:
-            chairman = next(chairmen)[2]
-        except:
-            chairman = ''
+        A.write('&\\hfill {\\bf Convenor '+'INSERT CHAIRMEN'+' }\\\ \n')
+        #A.write('&\\hfill {\\bf Convenor '+next(chairmen)[2] + ' }\\\ \n')
 
-        A.write('&\\hfill {\\bf Convenor '+chairman + ' }\\\ \n')
-        old_date = date
-        
-        
-      if 'Coffee' in last_name:
-        try:
-           chairman = next(chairmen)[2]
-        except:
-            chairman = ''
-        talkrow  = clock+' & '+'{\\bf Coffee} \\hfill '+\
-                   '{\\bf Convenor '+chairman+' }\\\ \n'
-        titlerow = ' & \\\ \n'
+        for row in datareader:
+            date      = row[0]
+            clock     = row[1]
+            speaker   = row[2]
+            #last_name   = row[2]
+            #first_name  = row[3]
+            #stay        = row[4]
+            #institute   = row[5]
+            length    = row[3]
+            title     = row[4]
+            
+            #if date!=old_date:
+            #    A.write(tablestop)
+            #    A.close()
+            #    A = open(PLEN_OUT_PATH+"plenary"+date+".tex",'w')
+            #    A.write(tablestart)
+            #    try:
+            #        chairman = next(chairmen)[2]
+            #    except:
+            #        chairman = ''
 
-      else:
-        talkrow = clock+' & '+last_name.upper()+', '+\
-                  first_name+' ('+institute+')\\\ \n'
-        titlerow= length+' min. & {\\it '+title+'}\\\ \n'+\
-                  ' & \\\ \n'
+            #    A.write('&\\hfill {\\bf Convenor '+chairman + ' }\\\ \n')
+            #    old_date = date
+              
+              
+            if 0:#'Coffee' in speaker:#last_name:
+                pass
+                #try:
+                #   chairman = next(chairmen)[2]
+                #except:
+                #    chairman = ''
+                #talkrow  = clock+' & '+'{\\bf Coffee} \\hfill '+\
+                #           '{\\bf Convenor '+chairman+' }\\\ \n'
+                #titlerow = ' & \\\ \n'
 
-      A.write(talkrow+titlerow) 
-    
-    A.write(tablestop)
-    A.close() 
-    f.close()
-    g.close()
+            else:
+                talkrow = clock+' & '+speaker+'\\\ \n'#last_name.upper()+', '+\
+                          #first_name+' ('+institute+')\\\ \n'
+                titlerow= length+' min. & {\\it '+title+'}\\\ \n'+\
+                          ' & \\\ \n'
+
+                A.write(talkrow+titlerow) 
+                
+        A.write(tablestop)
+        A.close() 
+        f.close()
+        #g.close()
 
   def parallel (self):
     old_date        = ''
     old_session     = ''
     chair_line      = '  \\hfill Convenor {}'
-    tablestart      ='\\begin{table}[h!]\n\\begin{tabular}{p{3cm}p{13cm}}\n'
-    tablestop       ='\\end{tabular}\n\\end{table}\n\n'+30*'%'+\
+    tablestart      ='\\begin{longtable}[h!]\n\\begin{tabular}{p{3cm}p{13cm}}\n'
+    tablestop       ='\\end{tabular}\n\\end{longtable}\n\n'+30*'%'+\
                      '\n\\hspace*{-10cm}\n' 
  
     f=open(PARA_IN_FILE,'r')
