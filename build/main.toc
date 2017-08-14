@@ -1,36 +1,40 @@
-\contentsline {section}{\numberline {1}17. August}{2}
-\contentsline {subsection}{\numberline {1.1}Lectures}{2}
-\contentsline {section}{\numberline {2}18. August}{3}
-\contentsline {subsection}{\numberline {2.1}Special Session on QCD}{3}
-\contentsline {subsection}{\numberline {2.2}W. Greiner Memorial Session}{4}
-\contentsline {subsection}{\numberline {2.3}Mini-workshop on Highly Ionising Avatars of New Physics}{5}
-\contentsline {section}{\numberline {3}19. August}{7}
-\contentsline {subsection}{\numberline {3.1}Parallel session}{7}
-\contentsline {subsection}{\numberline {3.2}Special session on Astro-Cosmo-Gravity}{8}
-\contentsline {subsection}{\numberline {3.3}B Heavy Ion Physics Session}{9}
-\contentsline {subsection}{\numberline {3.4}Mini-Workshop on Latest Results and New Physics in the Higgs Sector}{10}
-\contentsline {section}{\numberline {4}21. August}{12}
-\contentsline {subsection}{\numberline {4.1}Poster session}{12}
-\contentsline {subsection}{\numberline {4.2}A Particle Physics}{15}
-\contentsline {subsection}{\numberline {4.3}C Quantum Optics and Quantum Information}{16}
-\contentsline {subsection}{\numberline {4.4}Special Session on Instruments and Methods in HEP}{17}
-\contentsline {subsection}{\numberline {4.5}Workshop on continuous variables and quantum information}{18}
-\contentsline {subsection}{\numberline {4.6}Workshop on Exotic Hadrons}{19}
-\contentsline {subsection}{\numberline {4.7}S. Belyaev Memorial Session}{20}
-\contentsline {section}{\numberline {5}22. August}{21}
-\contentsline {subsection}{\numberline {5.1}Session on Physics Education and Outreach}{21}
-\contentsline {subsection}{\numberline {5.2}Public talk}{22}
-\contentsline {section}{\numberline {6}23. August}{23}
-\contentsline {subsection}{\numberline {6.1}Workshop on Quantum Foundations and Quantum Information}{23}
-\contentsline {subsection}{\numberline {6.2}Joint Quantum Session}{24}
-\contentsline {section}{\numberline {7}24. August}{25}
-\contentsline {subsection}{\numberline {7.1}D Astroparticle, Cosmology,d Gravity, Math Phys}{25}
-\contentsline {subsection}{\numberline {7.2}H. Oeschler Memorial Session}{26}
-\contentsline {subsection}{\numberline {7.3}Workshop on Physics at FAIR-NICA-SPS-BES/RHIC}{27}
-\contentsline {subsection}{\numberline {7.4}Workshop on NCG}{28}
-\contentsline {section}{\numberline {8}25. August}{29}
-\contentsline {subsection}{\numberline {8.1}Mini-workshop:Correlations and Fluctuations in Relativistic Heavy Ion Collisions}{29}
-\contentsline {section}{\numberline {9}28. August}{30}
-\contentsline {subsection}{\numberline {9.1}Workshop on Future of Fundamental Physics}{30}
-\contentsline {subsection}{\numberline {9.2}Workshop on (Super)gravity, String theory and Related Topics}{31}
-\contentsline {subsection}{\numberline {9.3}Interdisciplinary Session}{32}
+\contentsline {section}{\numberline {17}}{3}
+\contentsline {subsection}{\numberline {17.1}Lectures}{3}
+\contentsline {section}{\numberline {18}}{4}
+\contentsline {subsection}{\numberline {18.1}Special Session on QCD}{4}
+\contentsline {subsection}{\numberline {18.2}W. Greiner Memorial Session}{5}
+\contentsline {subsection}{\numberline {18.3}Mini-workshop on Highly Ionising Avatars of New Physics}{6}
+\contentsline {section}{\numberline {19}}{8}
+\contentsline {subsection}{\numberline {19.1}Parallel session}{8}
+\contentsline {subsection}{\numberline {19.2}Special session on Astro-Cosmo-Gravity}{10}
+\contentsline {subsection}{\numberline {19.3}B Heavy Ion Physics Session}{11}
+\contentsline {subsection}{\numberline {19.4}Mini-Workshop on Latest Results and New Physics in the Higgs Sector}{12}
+\contentsline {section}{\numberline {20}}{14}
+\contentsline {subsection}{\numberline {20.1}Poster session}{14}
+\contentsline {subsection}{\numberline {20.2}A Particle Physics}{17}
+\contentsline {subsection}{\numberline {20.3}C Quantum Optics and Quantum Information}{18}
+\contentsline {subsection}{\numberline {20.4}Special Session on Instruments and Methods in HEP}{19}
+\contentsline {subsection}{\numberline {20.5}Workshop on continuous variables and quantum information}{20}
+\contentsline {subsection}{\numberline {20.6}Workshop on Exotic Hadrons}{21}
+\contentsline {subsection}{\numberline {20.7}Workshop on Future of Fundamental Physics}{22}
+\contentsline {subsection}{\numberline {20.8}S. Belyaev Memorial Session}{23}
+\contentsline {subsection}{\numberline {20.9}Mini-workshop:Correlations and Fluctuations in Relativistic Heavy Ion Collisions}{24}
+\contentsline {section}{\numberline {21}}{25}
+\contentsline {subsection}{\numberline {21.1}Session on Physics Education and Outreach}{25}
+\contentsline {subsection}{\numberline {21.2}Public talk}{26}
+\contentsline {section}{\numberline {22}}{27}
+\contentsline {subsection}{\numberline {22.1}Workshop on Quantum Foundations and Quantum Information}{27}
+\contentsline {subsection}{\numberline {22.2}Joint Quantum Session}{28}
+\contentsline {section}{\numberline {23}}{29}
+\contentsline {subsection}{\numberline {23.1}D Astroparticle, Cosmology,d Gravity, Math Phys}{29}
+\contentsline {subsection}{\numberline {23.2}H. Oeschler Memorial Session}{30}
+\contentsline {subsection}{\numberline {23.3}Workshop on Physics at FAIR-NICA-SPS-BES/RHIC}{31}
+\contentsline {subsection}{\numberline {23.4}Workshop on NCG}{32}
+\contentsline {section}{\numberline {24}}{33}
+\contentsline {subsection}{\numberline {24.1}Special Session on Instruments and Methods in HEP}{33}
+\contentsline {subsection}{\numberline {24.2}Mini-workshop:Correlations and Fluctuations in Relativistic Heavy Ion Collisions}{34}
+\contentsline {section}{\numberline {25}}{35}
+\contentsline {subsection}{\numberline {25.1}Workshop on Future of Fundamental Physics}{35}
+\contentsline {subsection}{\numberline {25.2}S. Belyaev Memorial Session}{36}
+\contentsline {subsection}{\numberline {25.3}Workshop on (Super)gravity, String theory and Related Topics}{37}
+\contentsline {subsection}{\numberline {25.4}Interdisciplinary Session}{38}

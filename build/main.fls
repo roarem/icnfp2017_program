@@ -1,4 +1,4 @@
-PWD /home/roar/ICNFP/icnfp2017/icnfp2017_program
+PWD /home/roar/icnfp/icnfp2017_program
 INPUT /usr/share/texmf-dist/web2c/texmf.cnf
 INPUT /var/lib/texmf/web2c/pdftex/pdflatex.fmt
 INPUT build/main.tex
@@ -23,6 +23,8 @@ INPUT /usr/share/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 INPUT /usr/share/texmf-dist/tex/generic/ifxetex/ifxetex.sty
 INPUT /usr/share/texmf-dist/tex/latex/tools/longtable.sty
 INPUT /usr/share/texmf-dist/tex/latex/tools/longtable.sty
+INPUT /usr/share/texmf-dist/tex/latex/titlesec/titlesec.sty
+INPUT /usr/share/texmf-dist/tex/latex/titlesec/titlesec.sty
 INPUT build/main.aux
 INPUT build/main.aux
 OUTPUT build/main.aux
@@ -39,9 +41,9 @@ INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmmi6.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmsy10.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmsy8.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmsy6.tfm
-OUTPUT build/main.toc
 OUTPUT build/main.pdf
 INPUT /var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map
+OUTPUT build/main.toc
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
 INPUT /usr/share/texmf-dist/fonts/tfm/public/cm/cmbx12.tfm
 INPUT program/sessions/17_10.tex
@@ -73,8 +75,12 @@ INPUT program/sessions/21_16.tex
 INPUT program/sessions/21_16.tex
 INPUT program/sessions/21_17.tex
 INPUT program/sessions/21_17.tex
+INPUT program/sessions/21_18.tex
+INPUT program/sessions/21_18.tex
 INPUT program/sessions/21_19.tex
 INPUT program/sessions/21_19.tex
+INPUT program/sessions/21_20.tex
+INPUT program/sessions/21_20.tex
 INPUT program/sessions/22_23.tex
 INPUT program/sessions/22_23.tex
 INPUT program/sessions/22_25.tex
@@ -91,10 +97,14 @@ INPUT program/sessions/24_14.tex
 INPUT program/sessions/24_14.tex
 INPUT program/sessions/24_22.tex
 INPUT program/sessions/24_22.tex
+INPUT program/sessions/25_15.tex
+INPUT program/sessions/25_15.tex
 INPUT program/sessions/25_20.tex
 INPUT program/sessions/25_20.tex
 INPUT program/sessions/28_18.tex
 INPUT program/sessions/28_18.tex
+INPUT program/sessions/28_19.tex
+INPUT program/sessions/28_19.tex
 INPUT program/sessions/28_24.tex
 INPUT program/sessions/28_24.tex
 INPUT program/sessions/28_26.tex

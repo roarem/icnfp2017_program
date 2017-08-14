@@ -45,22 +45,19 @@ class Program:
                         A=open(PLEN_OUT_PATH+str(date)+'_'+fi[-2:]+".tex",'w+')
                         A.write(tablestart)
                         A.write('&\\hfill {\\bf Convenor '+'INSERT CHAIRMEN'+' }\\\ \n')
+                    
+                    if 'Coffee' in speaker or 'Lunch' in speaker or 'Dinner' in speaker:
+                        print(speaker)
+                        talkrow     = clock+' & '+'{\\bf '+speaker+'} \\hfill '
+                        titlerow    = length+' \\\ \n & \\\ \n'+' & \\\ \n'
 
-                    talkrow = clock+' & '+speaker+' ('+affili+')\\\ \n'
-                    titlerow= length+' min. & {\\it '+title+'}\\\ \n'+\
-                              ' & \\\ \n'
+                    else:
+                        talkrow = clock+' & '+speaker+' ('+affili+')\\\ \n'
+                        titlerow= length+' min. & {\\it '+title+'}\\\ \n'+\
+                                  ' & \\\ \n'
     
                     A.write(talkrow+titlerow) 
                       
-                    #if 0:#'Coffee' in speaker:#last_name:
-                        #pass
-                        #try:
-                        #   chairman = next(chairmen)[2]
-                        #except:
-                        #    chairman = ''
-                        #talkrow  = clock+' & '+'{\\bf Coffee} \\hfill '+\
-                        #           '{\\bf Convenor '+chairman+' }\\\ \n'
-                        #titlerow = ' & \\\ \n'
     
                 try:
                     A.write(tablestop)
@@ -88,13 +85,13 @@ class Program:
             break
         session_files.sort()
     
-        section     = '\\section{' 
+        section     = '\\section{{}}' 
         subsection  = '\\subsection{{{}}}\n'
         old_date = '16'
         for fi in session_files[:-1]:
             date = fi[:2]
             if date != old_date:
-                main.write(section+str(date)+'. August}\n')
+                main.write(section.format(date)+'\n')
                 old_date=date
 
             session = order_dict[fi[-6:-4]]

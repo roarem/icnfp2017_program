@@ -3,13 +3,13 @@ TEXAU = latexmk --output-directory=build -file-line-error -use-make
 
 .PHONY: main.pdf 
 
-all : sort_cont create_tex main.pdf view
+all : sort tex pdf view
 
-create_tex : 
-	python program.py
+tex : 
+	python tex.py
 
-sort_cont :
-	python sort_cont.py
+sort :
+	python sort.py
 
 copy : 
 	cp sorted/sessions/* inputfiles/sessions/
@@ -21,7 +21,7 @@ clean :
 	rm -r build
 	mkdir build
 
-main.pdf :
+pdf :
 	cp program/main/main.tex build/
 	$(TEX) build/main.tex
 	cp build/main.pdf main.pdf
