@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2017.8.12)  14 AUG 2017 13:19
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2017.8.12)  14 AUG 2017 19:55
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -140,37 +140,37 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 2.
- [1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}])
+)
 \tf@toc=\write3
 \openout3 = `main.toc'.
 
+ [1
 
-[2] (./program/sessions/17_10.tex
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+(./program/sessions/17_10.tex
 Underfull \hbox (badness 1215) in paragraph at lines 10--11
 []|\OT1/cmr/m/it/12 Gravity Wave sig-na-tures of Elec-troweak Phase Tran-si-tio
 n in Split
  []
 
-) [3
+) [2
 
 ] (./program/sessions/18_09.tex
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¼ in font cmr12!
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¡ in font cmr12!
-) [4
+) [3
 
 ] (./program/sessions/18_11.tex
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¼ in font cmr12!
 )
-[5
+[4
 
-] (./program/sessions/18_12.tex [6
+] (./program/sessions/18_12.tex [5
 
-]) [7] (./program/sessions/19_00.tex
+]) [6] (./program/sessions/19_00.tex
 Missing character: There is no â in font cmti12!
 Missing character: There is no ˆ in font cmti12!
 Missing character: There is no š in font cmti12!
@@ -186,16 +186,16 @@ Missing character: There is no â in font cmti12!
 Missing character: There is no € in font cmti12!
 Missing character: There is no  in font cmti12!
 
-[8
+[7
 
-]) [9] (./program/sessions/19_03.tex) [10
+]) [8] (./program/sessions/19_03.tex) [9
 
 ] (./program/sessions/19_07.tex)
-[11
+[10
 
-] (./program/sessions/19_08.tex [12
+] (./program/sessions/19_08.tex [11
 
-]) [13] (./program/sessions/21_04.tex
+]) [12] (./program/sessions/21_04.tex
 Missing character: There is no â in font cmti12!
 Missing character: There is no € in font cmti12!
 Missing character: There is no ™ in font cmti12!
@@ -210,49 +210,45 @@ Missing character: There is no Ã in font cmr12!
 Missing character: There is no © in font cmr12!
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ³ in font cmr12!
-Missing character: There is no Ã in font cmr12!
-Missing character: There is no – in font cmr12!
 
-[14
+[13
 
 ]
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no – in font cmr12!
 Missing character: There is no â in font cmti12!
 Missing character: There is no ˆ in font cmti12!
 Missing character: There is no š in font cmti12!
- [15]) [16] (./program/sessions/21_05.tex) [17
+ [14]) [15] (./program/sessions/21_05.tex) [16
 
 ]
-(./program/sessions/21_06.tex) [18
+(./program/sessions/21_06.tex) [17
 
-] (./program/sessions/21_15.tex) [19
+] (./program/sessions/21_16.tex) [18
 
 ]
-(./program/sessions/21_16.tex) [20
-
-] (./program/sessions/21_17.tex
+(./program/sessions/21_17.tex
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¼ in font cmr12!
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no © in font cmr12!
-) [21
+ [19
 
-]
-(./program/sessions/21_18.tex
+]) [20] (./program/sessions/21_18.tex
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¼ in font cmr12!
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no © in font cmr12!
-) [22
-
-] (./program/sessions/21_19.tex) [23
+)
+[21
 
 ]
-Overfull \hbox (12.27539pt too wide) in paragraph at lines 73--73
+Overfull \hbox (12.27539pt too wide) in paragraph at lines 65--65
 |[]\OT1/cmr/bx/n/14.4 Mini-workshop:Correlations and Fluc-tu-a-tions in Rel-a-t
 ivis-tic Heavy
  []
 
-(./program/sessions/21_20.tex) [24
+(./program/sessions/21_20.tex) [22
 
 ] (./program/sessions/22_23.tex
 Missing character: There is no â in font cmti12!
@@ -260,63 +256,53 @@ Missing character: There is no € in font cmti12!
 Missing character: There is no ™ in font cmti12!
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ­ in font cmr12!
-) [25
+) [23
 
 ]
-(./program/sessions/22_25.tex) [26
+(./program/sessions/22_25.tex) [24
 
-] (./program/sessions/23_02.tex) [27
+] (./program/sessions/23_02.tex) [25
 
 ]
 (./program/sessions/23_21.tex
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ­ in font cmr12!
-) [28
+) [26
 
 ] (./program/sessions/24_01.tex
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no   in font cmr12!
-) [29
+) [27
 
 ]
-(./program/sessions/24_13.tex) [30
+(./program/sessions/24_13.tex) [28
 
-] (./program/sessions/24_14.tex) [31
-
-]
-(./program/sessions/24_22.tex) [32
-
-] (./program/sessions/25_15.tex) [33
+] (./program/sessions/24_14.tex) [29
 
 ]
-Overfull \hbox (12.27539pt too wide) in paragraph at lines 117--117
-|[]\OT1/cmr/bx/n/14.4 Mini-workshop:Correlations and Fluc-tu-a-tions in Rel-a-t
-ivis-tic Heavy
- []
+(./program/sessions/24_22.tex) [30
 
-(./program/sessions/25_20.tex) [34
-
-] (./program/sessions/28_18.tex) [35
+] (./program/sessions/25_15.tex) [31
 
 ]
-(./program/sessions/28_19.tex) [36
+(./program/sessions/28_19.tex) [32
 
 ] (./program/sessions/28_24.tex
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no   in font cmr12!
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no © in font cmr12!
-) [37
+) [33
 
 ]
-(./program/sessions/28_26.tex) [38
+(./program/sessions/28_26.tex) [34
 
 ] (build/main.aux) ) 
 Here is how much of TeX's memory you used:
- 1246 strings out of 492990
- 16665 string characters out of 6138688
- 96560 words of memory out of 5000000
- 4749 multiletter control sequences out of 15000+600000
+ 1230 strings out of 492990
+ 16400 string characters out of 6138688
+ 96420 words of memory out of 5000000
+ 4745 multiletter control sequences out of 15000+600000
  8241 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  27i,8n,32p,236b,200s stack positions out of 5000i,500n,10000p,200000b,80000s
@@ -325,10 +311,10 @@ Here is how much of TeX's memory you used:
 are/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmti12.pfb>
-Output written on build/main.pdf (38 pages, 116823 bytes).
+Output written on build/main.pdf (34 pages, 115112 bytes).
 PDF statistics:
- 149 PDF objects out of 1000 (max. 8388607)
- 102 compressed objects within 2 object streams
+ 133 PDF objects out of 1000 (max. 8388607)
+ 91 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

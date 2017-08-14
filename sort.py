@@ -30,6 +30,7 @@ def sort_contributions(filename='inputfiles/contributions.csv'):
                 order_file.write('{:02d}#{}\n'.format(count,row[6]))
                 csv_writers.append(csv.writer(out_csv[count],delimiter=',',\
                                    quotechar='"',quoting=csv.QUOTE_MINIMAL))
+                
                 count += 1
 
         order_file.close()
@@ -53,21 +54,21 @@ def sort_contributions(filename='inputfiles/contributions.csv'):
 
                 csv_writers[sessions[session]].writerow(csv_line)
 
-                start_time = create_datetime(day,clock[:6].strip())
-                stop_time  = create_datetime(day,clock[8:].strip())
-                for key in break_dict[day]:
-                    try:
-                        if stop_time>=break_dict[day][key][0] and stop_time<=break_dict[day][key][1]:
-                            speaker = break_dict[day][key][3]
-                            length  = str(break_dict[day][key][2])
-                            clock   = break_dict[day][key][0].strftime('%H.%M')+\
-                                      ' - '+\
-                                      break_dict[day][key][1].strftime('%H.%M')
+                #start_time = create_datetime(day,clock[:6].strip())
+                #stop_time  = create_datetime(day,clock[8:].strip())
+                #for key in break_dict[day]:
+                #    try:
+                #        if stop_time>=break_dict[day][key][0] and stop_time<=break_dict[day][key][1]:
+                #            speaker = break_dict[day][key][3]
+                #            length  = str(break_dict[day][key][2])
+                #            clock   = break_dict[day][key][0].strftime('%H.%M')+\
+                #                      ' - '+\
+                #                      break_dict[day][key][1].strftime('%H.%M')
 
-                            csv_line = [day,clock,speaker,length,'','']
-                            csv_writers[sessions[session]].writerow(csv_line)
-                    except:
-                        pass
+                #            csv_line = [day,clock,speaker,length,'','']
+                #            csv_writers[sessions[session]].writerow(csv_line)
+                #    except:
+                #        pass
 
         for out in out_csv:
             out.close()
