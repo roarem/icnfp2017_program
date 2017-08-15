@@ -12,14 +12,11 @@ class Program:
         for date in range(17,30):
             self.day_sess[date] = {}
 
-
-
     def sessions(self):
     
-        tablestart      ='\\begin{longtable}{p{3cm}p{13cm}}\n'
-        tablestop       ='\\end{longtable}\n\n'
 
         break_dict = self.break_dict_creator()
+        social_dict= self.social_dict_creator()
             
         session_files = []
         for (dirpath, dirnames, filenames) in os.walk(INPUT_PATH):
@@ -36,10 +33,7 @@ class Program:
                 sessions_nam[line[0]] = line[1]
                 sessions_num[line[1]] = line[0]
 
-        #day_sess = {17:{},18:{},19:{},20:{},21:{},22:{},23:{},24:{},25:{},26:{},27:{},28:{},29:{}}
-
         for date in range(17,30):
-            #day_sess[date] = {}
             for fi in session_files[1:]:
                 self.day_sess[date][sessions_nam[fi[-2:]]] = []
                 with open(INPUT_PATH+fi,'r') as f:
@@ -64,82 +58,61 @@ class Program:
                             self.day_sess[date][sessions_nam[fi[-2:]]].append([day,clock,speaker,length,'',''])
                         except:
                             pass
-            
+
+             
+            self.day_sess[date]['social'] = []
+            for social in social_dict[date]:
+                self.day_sess[date]['social'].append([str(date)]+social) 
+
         for key,value in self.day_sess.items():
             for key2,value2 in value.items():
                 val = sorted(value2,key=itemgetter(1)) 
                 if val:
-                    A=open(PLEN_OUT_PATH+str(key)+'_'+sessions_num[key2]+".tex",'w+')
-                    A.write(tablestart)
-                    A.write('&\\hfill {\\bf Convenor '+'INSERT CHAIRMEN'+' }\\\ \n')
-                    for v in val:
-                        date_sess = v[0]
-                        clock     = v[1]
-                        speaker   = v[2]
-                        length    = v[3]
-                        title     = v[4].replace('_','\\_').replace('^','\\^')
-                        affili    = v[5]
+                    if key2=='social':
+                        tablestart      ='\\begin{longtable}{p{3cm}p{10cm}p{4cm}}\n\\vspace{1cm}\n'
+                        A=open(PLEN_OUT_PATH+str(key)+'0_social.tex','w+')
+                        A.write(tablestart)
+                        for v in val:
+                            date_sess = key
+                            clock     = v[1]
+                            title     = v[2]
+                            length    = v[3]
 
-                        speaker = " ".join(item[0].upper()+item[1:] for item in speaker.lower().split())
+                            h = length.split('h')[0]
+                            m = length.split('h')[1][:-1]
+                            talkrow = clock+' & {\\bf '+title+'} & \\hfill '
+                            titlerow= h+' h '+str(int(m))+' min\\\ \n\\vspace{1cm}\n'
 
-                        if 'Coffee' in speaker or 'Lunch' in speaker or 'Dinner' in speaker:
-                            talkrow     = clock+' & '+'{\\bf '+speaker+'} \\hfill '
-                            titlerow    = length+' \\\ \n & \\\ \n'+' & \\\ \n'
+                            A.write(talkrow+titlerow)
 
-                        else:
-                            talkrow = clock+' & '+speaker+' ('+affili+')\\\ \n'
-                            titlerow= length+' min. & {\\it '+title+'}\\\ \n'+\
-                                      ' & \\\ \n'
+                    else:
+                        A=open(PLEN_OUT_PATH+str(key)+'_'+sessions_num[key2]+".tex",'w+')
+                        tablestart ='\\begin{longtable}{p{3cm}p{13cm}}\n'
+                        A.write(tablestart)
+                        A.write('&\\hfill {\\bf Convenor '+'INSERT CHAIRMEN'+' }\\\ \n')
+                        for v in val:
+                            date_sess = v[0]
+                            clock     = v[1]
+                            speaker   = v[2]
+                            length    = v[3]
+                            title     = v[4].replace('_','\\_').replace('^','\\^')
+                            affili    = v[5]
 
-                        A.write(talkrow+titlerow) 
+                            speaker = " ".join(item[0].upper()+item[1:] for item in speaker.lower().split())
+
+                            if 'Coffee' in speaker or 'Lunch' in speaker or 'Dinner' in speaker:
+                                talkrow     = clock+' & '+'{\\bf '+speaker+'} \\hfill '
+                                titlerow    = length+' \\\ \n & \\\ \n'+' & \\\ \n'
+
+                            else:
+                                talkrow = clock+' & '+speaker+' ('+affili+')\\\ \n'
+                                titlerow= length+' min. & {\\it '+title+'}\\\ \n'+\
+                                          ' & \\\ \n'
+
+                            A.write(talkrow+titlerow) 
+                    tablestop ='\\end{longtable}\n\n'
                     A.write(tablestop)
                     A.close()
-
-        
-
-
-        #for date in range(17,30):
-        #    for fi in session_files[1:]:
-
-        #        f=open(INPUT_PATH+fi,'r')
-        #        datareader = csv.reader(f,delimiter=',',quotechar='"')
-        #        for i,row in enumerate(datareader):
-        #            date_sess = row[0]
-        #            clock     = row[1]
-        #            speaker   = row[2]
-        #            length    = row[3]
-        #            title     = row[4].replace('_','\\_').replace('^','\\^')
-        #            affili    = row[5]
-
-        #            speaker = " ".join(item[0].upper()+item[1:] for item in speaker.lower().split())
-        #            if date_sess!=str(date):
-        #                break
-
-        #            else:
-
-        #                if i==0:
-        #                    A=open(PLEN_OUT_PATH+str(date)+'_'+fi[-2:]+".tex",'w+')
-        #                    A.write(tablestart)
-        #                    A.write('&\\hfill {\\bf Convenor '+'INSERT CHAIRMEN'+' }\\\ \n')
-        #                
-        #                if 'Coffee' in speaker or 'Lunch' in speaker or 'Dinner' in speaker:
-        #                    talkrow     = clock+' & '+'{\\bf '+speaker+'} \\hfill '
-        #                    titlerow    = length+' \\\ \n & \\\ \n'+' & \\\ \n'
-
-        #                else:
-        #                    talkrow = clock+' & '+speaker+' ('+affili+')\\\ \n'
-        #                    titlerow= length+' min. & {\\it '+title+'}\\\ \n'+\
-        #                              ' & \\\ \n'
-    
-        #                A.write(talkrow+titlerow) 
-        #              
-    
-        #        try:
-        #            A.write(tablestop)
-        #            A.close() 
-        #        except:
-        #            continue
-        #        f.close()
                         
     def main_tex(self):
     
@@ -164,13 +137,19 @@ class Program:
         section     = '\\section{{}}' 
         subsection  = '\\subsection{{{}}}\n'
         old_date = '16'
-        for fi in session_files[:-1]:
+        print(session_files)
+        for fi in session_files:
+            if fi=='order':
+                continue
+            elif 'social' in fi:
+                session = 'Social events'
+            else:
+                session = order_dict[fi[-6:-4]]
             date = fi[:2]
             if date != old_date:
                 main.write(section.format(date)+'\n')
                 old_date=date
     
-            session = order_dict[fi[-6:-4]]
             main.write(subsection.format(session))
             main.write('\\input{\\PlenaryPath/'+fi+'}\n')
             main.write('\\clearpage\n\n')
@@ -209,6 +188,19 @@ class Program:
                         break_dict[day][he] = []
         return break_dict
         
+    def social_dict_creator(self):
+        social_dict = {}
+        for day in range(17,30):
+            social_dict[day] = []
+
+        with open('inputfiles/social.csv','r') as socials:
+            social_reader = csv.reader(socials,delimiter=',',quotechar='"')
+            headers = next(social_reader)
+            for line in social_reader:
+                day = line[0]
+                social_dict[int(day)].append(line[1:])
+        return social_dict 
+
     def create_datetime(self,day,time):
         return dt.datetime.strptime('2017-08-'+day+'-'+time,'%Y-%m-%d-%H.%M')
 
