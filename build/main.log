@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2017.8.12)  15 AUG 2017 22:32
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2017.8.12)  16 AUG 2017 17:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -237,6 +237,12 @@ Missing character: There is no ™ in font cmti12!
 Missing character: There is no â in font cmti12!
 Missing character: There is no € in font cmti12!
 Missing character: There is no ™ in font cmti12!
+
+Underfull \hbox (badness 1796) in paragraph at lines 66--67
+[]|\OT1/cmr/m/n/12 Virendrasinh H. Kher, Nay-neshku-mar De-vlani, Ajay Ku-mar R
+ai
+ []
+
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¡ in font cmr12!
 Missing character: There is no Ã in font cmr12!
@@ -245,7 +251,7 @@ Missing character: There is no Ã in font cmr12!
 Missing character: There is no © in font cmr12!
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ³ in font cmr12!
- [19
+[19
 
 ]
 Missing character: There is no Ã in font cmr12!
@@ -253,28 +259,28 @@ Missing character: There is no – in font cmr12!
 Missing character: There is no â in font cmti12!
 Missing character: There is no ˆ in font cmti12!
 Missing character: There is no š in font cmti12!
- [20]) [21]
-(./program/sessions/21_05.tex) [22
-
-] (./program/sessions/21_06.tex) [23
+ [20]) [21] (./program/sessions/21_05.tex) [22
 
 ]
-(./program/sessions/21_16.tex) [24
+(./program/sessions/21_06.tex) [23
 
-] (./program/sessions/21_17.tex
+] (./program/sessions/21_16.tex) [24
+
+]
+(./program/sessions/21_17.tex
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¼ in font cmr12!
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no © in font cmr12!
  [25
 
-])
-[26] (./program/sessions/21_18.tex
+]) [26] (./program/sessions/21_18.tex
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no ¼ in font cmr12!
 Missing character: There is no Ã in font cmr12!
 Missing character: There is no © in font cmr12!
-) [27
+)
+[27
 
 ]
 Overfull \hbox (12.27539pt too wide) in paragraph at lines 86--86
@@ -302,7 +308,10 @@ Missing character: There is no ­ in font cmr12!
 ] (./program/sessions/22_25.tex)
 [31
 
-] (./program/sessions/23_02.tex) [32
+] (./program/sessions/23_02.tex
+Missing character: There is no Ã in font cmr12!
+Missing character: There is no ¼ in font cmr12!
+) [32
 
 ] (./program/sessions/23_21.tex
 Missing character: There is no Ã in font cmr12!
@@ -393,7 +402,7 @@ Here is how much of TeX's memory you used:
 are/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmti12.pfb>
-Output written on build/main.pdf (47 pages, 120974 bytes).
+Output written on build/main.pdf (47 pages, 120958 bytes).
 PDF statistics:
  177 PDF objects out of 1000 (max. 8388607)
  121 compressed objects within 2 object streams

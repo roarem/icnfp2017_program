@@ -30,7 +30,6 @@ def sort_contributions(filename='inputfiles/contributions.csv'):
                 order_file.write('{:02d}#{}\n'.format(count,row[6]))
                 csv_writers.append(csv.writer(out_csv[count],delimiter=',',\
                                    quotechar='"',quoting=csv.QUOTE_MINIMAL))
-                
                 count += 1
 
         order_file.close()

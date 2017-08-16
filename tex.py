@@ -34,6 +34,11 @@ class Program:
                 sessions_num[line[1]] = line[0]
 
         for date in range(17,30):
+            #if date==27:
+            #    self.day_sess[date]['Round Table'] = [[date,'19.00 - 20.30',\
+            #                                           '"Round Table on High Energy Physics after the LHC"',\
+            #                                           '','']
+
             for fi in session_files[1:]:
                 self.day_sess[date][sessions_nam[fi[-2:]]] = []
                 with open(INPUT_PATH+fi,'r') as f:
