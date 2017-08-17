@@ -144,6 +144,7 @@ class Program:
         old_date = '16'
         print(session_files)
         for fi in session_files:
+            print(fi)
             if fi=='order':
                 continue
             elif 'social' in fi:

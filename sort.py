@@ -23,7 +23,6 @@ def sort_contributions(filename='inputfiles/contributions.csv'):
             session_mat.append(row)
             if has_key(row[6],sessions):
                 continue
-
             else:
                 sessions[row[6]] = count 
                 out_csv.append(open('sorted/sessions/session_'+format(count,'02d'),'w+'))
@@ -86,7 +85,6 @@ def break_dict_creator():
             break_dict[day] = {}
             for i,he in enumerate(h[1::3]):
                 try:
-
                     length = str(create_datetime(day,temp_line[i*3+3])-\
                                  create_datetime(day,temp_line[i*3+2]))
                     length = dt.datetime.strptime(length,'%H:%M:%S')

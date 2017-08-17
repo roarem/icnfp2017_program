@@ -11,9 +11,6 @@ tex :
 sort :
 	python sort.py
 
-copy : 
-	cp sorted/sessions/* inputfiles/sessions/
-
 view : 
 	zathura main.pdf
 

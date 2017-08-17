@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2017.8.12)  16 AUG 2017 17:23
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2017.8.12)  17 AUG 2017 08:54
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -184,12 +184,15 @@ Missing character: There is no º in font cmr12!
 
 ] (./program/sessions/18_12.tex [8
 
-]) [9] (./program/sessions/190_social.tex
+]) [9] (./program/sessions/18_27.tex)
+[10
+
+] (./program/sessions/190_social.tex
 Overfull \hbox (19.21284pt too wide) in alignment at lines 1--5
  [] [] [] 
  []
 
-) [10
+) [11
 
 ] (./program/sessions/19_00.tex
 Missing character: There is no ‚ in font cmti12!
@@ -206,29 +209,32 @@ Missing character: There is no ú in font cmti12!
 Missing character: There is no ‚ in font cmti12!
 Missing character: There is no Ä in font cmti12!
 Missing character: There is no ù in font cmti12!
- [11
+ [12
 
-]) [12] (./program/sessions/19_03.tex)
-[13
+]) [13] (./program/sessions/19_03.tex
+Missing character: There is no √ in font cmr12!
+Missing character: There is no § in font cmr12!
+)
+[14
 
-] (./program/sessions/19_07.tex) [14
+] (./program/sessions/19_07.tex) [15
 
-] (./program/sessions/19_08.tex [15
+] (./program/sessions/19_08.tex [16
 
 ])
-[16] (./program/sessions/200_social.tex
+[17] (./program/sessions/200_social.tex
 Overfull \hbox (19.21284pt too wide) in alignment at lines 1--9
  [] [] [] 
  []
 
-) [17
+) [18
 
 ] (./program/sessions/210_social.tex
 Overfull \hbox (19.21284pt too wide) in alignment at lines 1--7
  [] [] [] 
  []
 
-) [18
+) [19
 
 ] (./program/sessions/21_04.tex
 Missing character: There is no ‚ in font cmti12!
@@ -238,7 +244,7 @@ Missing character: There is no ‚ in font cmti12!
 Missing character: There is no Ä in font cmti12!
 Missing character: There is no ô in font cmti12!
 
-Underfull \hbox (badness 1796) in paragraph at lines 66--67
+Underfull \hbox (badness 1796) in paragraph at lines 63--64
 []|\OT1/cmr/m/n/12 Virendrasinh H. Kher, Nay-neshku-mar De-vlani, Ajay Ku-mar R
 ai
  []
@@ -251,20 +257,20 @@ Missing character: There is no √ in font cmr12!
 Missing character: There is no © in font cmr12!
 Missing character: There is no √ in font cmr12!
 Missing character: There is no ≥ in font cmr12!
-[19
-
-]
 Missing character: There is no √ in font cmr12!
 Missing character: There is no ñ in font cmr12!
+[20
+
+]
 Missing character: There is no ‚ in font cmti12!
 Missing character: There is no à in font cmti12!
 Missing character: There is no ö in font cmti12!
- [20]) [21] (./program/sessions/21_05.tex) [22
+ [21]) [22] (./program/sessions/21_05.tex) [23
 
 ]
-(./program/sessions/21_06.tex) [23
+(./program/sessions/21_06.tex) [24
 
-] (./program/sessions/21_16.tex) [24
+] (./program/sessions/21_16.tex) [25
 
 ]
 (./program/sessions/21_17.tex
@@ -272,30 +278,24 @@ Missing character: There is no √ in font cmr12!
 Missing character: There is no º in font cmr12!
 Missing character: There is no √ in font cmr12!
 Missing character: There is no © in font cmr12!
- [25
+ [26
 
-]) [26] (./program/sessions/21_18.tex
+]) [27] (./program/sessions/21_18.tex
 Missing character: There is no √ in font cmr12!
 Missing character: There is no º in font cmr12!
 Missing character: There is no √ in font cmr12!
 Missing character: There is no © in font cmr12!
 )
-[27
+[28
 
-]
-Overfull \hbox (12.27539pt too wide) in paragraph at lines 86--86
-|[]\OT1/cmr/bx/n/14.4 Mini-workshop:Correlations and Fluc-tu-a-tions in Rel-a-t
-ivis-tic Heavy
- []
-
-(./program/sessions/21_20.tex) [28
+] (./program/sessions/21_20.tex) [29
 
 ] (./program/sessions/220_social.tex
 Overfull \hbox (19.21284pt too wide) in alignment at lines 1--5
  [] [] [] 
  []
 
-) [29
+) [30
 
 ] (./program/sessions/22_23.tex
 Missing character: There is no ‚ in font cmti12!
@@ -303,73 +303,82 @@ Missing character: There is no Ä in font cmti12!
 Missing character: There is no ô in font cmti12!
 Missing character: There is no √ in font cmr12!
 Missing character: There is no ≠ in font cmr12!
-) [30
+) [31
 
 ] (./program/sessions/22_25.tex)
-[31
+[32
 
 ] (./program/sessions/23_02.tex
 Missing character: There is no √ in font cmr12!
 Missing character: There is no º in font cmr12!
-) [32
+) [33
 
 ] (./program/sessions/23_21.tex
 Missing character: There is no √ in font cmr12!
 Missing character: There is no ≠ in font cmr12!
 )
-[33
+[34
 
 ] (./program/sessions/240_social.tex
 Overfull \hbox (19.21284pt too wide) in alignment at lines 1--5
  [] [] [] 
  []
 
-) [34
+) [35
 
 ] (./program/sessions/24_01.tex
 Missing character: There is no √ in font cmr12!
 Missing character: There is no † in font cmr12!
-) [35
+) [36
 
 ] (./program/sessions/24_13.tex)
-[36
+[37
 
-] (./program/sessions/24_14.tex) [37
+] (./program/sessions/24_14.tex) [38
 
 ] (./program/sessions/24_22.tex)
-[38
+[39
 
 ] (./program/sessions/250_social.tex
 Overfull \hbox (19.21284pt too wide) in alignment at lines 1--9
  [] [] [] 
  []
 
-) [39
+) [40
 
-] (./program/sessions/25_15.tex) [40
+]
+Overfull \hbox (43.32402pt too wide) in paragraph at lines 142--142
+|[]\OT1/cmr/bx/n/14.4 Joined Ses-sion of Work-shop on Physics at FAIR-NICA-SPS-
+BES/RHIC
+ []
+
+(./program/sessions/25_15.tex) [41
 
 ] (./program/sessions/260_social.tex
 Overfull \hbox (19.21284pt too wide) in alignment at lines 1--7
  [] [] [] 
  []
 
-) [41
+) [42
 
 ] (./program/sessions/270_social.tex
 Overfull \hbox (19.21284pt too wide) in alignment at lines 1--5
  [] [] [] 
  []
 
-) [42
+) [43
 
 ] (./program/sessions/280_social.tex
 Overfull \hbox (19.21284pt too wide) in alignment at lines 1--5
  [] [] [] 
  []
 
-) [43
+) [44
 
-] (./program/sessions/28_19.tex) [44
+] (./program/sessions/28_19.tex
+Missing character: There is no √ in font cmr12!
+Missing character: There is no © in font cmr12!
+) [45
 
 ] (./program/sessions/28_24.tex
 Missing character: There is no √ in font cmr12!
@@ -377,35 +386,35 @@ Missing character: There is no † in font cmr12!
 Missing character: There is no √ in font cmr12!
 Missing character: There is no © in font cmr12!
 )
-[45
+[46
 
-] (./program/sessions/28_26.tex) [46
+] (./program/sessions/28_26.tex) [47
 
 ] (./program/sessions/290_social.tex
 Overfull \hbox (19.21284pt too wide) in alignment at lines 1--5
  [] [] [] 
  []
 
-) [47
+) [48
 
 ] (build/main.aux) ) 
 Here is how much of TeX's memory you used:
- 1278 strings out of 492990
- 17384 string characters out of 6138688
- 97044 words of memory out of 5000000
- 4757 multiletter control sequences out of 15000+600000
+ 1282 strings out of 492990
+ 17448 string characters out of 6138688
+ 97079 words of memory out of 5000000
+ 4758 multiletter control sequences out of 15000+600000
  8241 words of font info for 29 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 27i,8n,32p,236b,200s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,8n,32p,255b,200s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmbx1
 2.pfb></usr/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi12.pfb></usr/sh
 are/texmf-dist/fonts/type1/public/amsfonts/cm/cmr12.pfb></usr/share/texmf-dist/
 fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texmf-dist/fonts/type1/pu
 blic/amsfonts/cm/cmti12.pfb>
-Output written on build/main.pdf (47 pages, 120958 bytes).
+Output written on build/main.pdf (48 pages, 121387 bytes).
 PDF statistics:
- 177 PDF objects out of 1000 (max. 8388607)
- 121 compressed objects within 2 object streams
+ 180 PDF objects out of 1000 (max. 8388607)
+ 123 compressed objects within 2 object streams
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
